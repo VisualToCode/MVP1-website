@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# local tooling
+.claude/
+node_modules/
+
+# source media — the optimised versions in assets/video/ are what ship
+*.mov
+/*.mp4
