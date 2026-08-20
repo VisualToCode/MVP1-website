@@ -1,0 +1,43 @@
+# 301 redirects for renamed slugs (old WordPress/staging URLs -> new clean URLs)
+# Netlify serves these as real HTTP 301s, preserving link equity, unlike the
+# meta-refresh stub pages this file is meant to replace.
+
+# Case studies hub + individual studies
+/casestudies                                                                                              /our-work  301
+/casestudies/security-marketplace                                                                          /case-studies/guardbay-security-marketplace  301
+/casestudies/tiny-home-marketplace                                                                          /case-studies/volstrukt-tiny-home-marketplace  301
+/casestudies/uber-for-kids                                                                                  /case-studies/kago-child-transport-platform  301
+
+# Ebook / resources
+/ebook/why-platform-business                                                                                /resources/business-model-workbook  301
+
+# Blog, long WordPress slugs -> short slugs
+/blog/7-core-principles-of-building-a-successful-platform-business                                          /blog/platform-business-principles  301
+/blog/agentic-ai-30x-productivity-guide                                                                      /blog/agentic-ai-productivity  301
+/blog/ai-agent-development-replace-traditional-hiring                                                        /blog/ai-agents-and-hiring  301
+/blog/ai-agents-vs-chatbots-what-business-leaders-need-to-understand-before-automating-workflows             /blog/ai-agents-vs-chatbots  301
+/blog/custom-software-development-for-growing-businesses-when-to-build-buy-or-stabilise                      /blog/build-buy-or-stabilise  301
+/blog/enterprise-ai-strategy-business-growth                                                                 /blog/enterprise-ai-strategy  301
+/blog/how-data-fuels-the-ai-revolution-lessons-from-whatsapps-19-billion-valuation                          /blog/data-fuels-ai  301
+/blog/inbound-ai-voice-agent-solution-guide                                                                  /blog/inbound-ai-voice-agents  301
+/blog/private-ai-infrastructure-control-data-sovereignty                                                     /blog/private-ai-infrastructure  301
+/blog/software-development-agency-selection-guide                                                            /blog/delivery-signals  301
+/blog/sovereign-ai-infrastructure-offshore-ai-legal-risks                                                     /blog/sovereign-ai-offshore-risk  301
+/blog/stalled-product-roadmap-rescue-guide                                                                   /blog/stalled-product-roadmap  301
+/blog/the-rise-of-agentic-workflows-why-businesses-are-replacing-traditional-automation-in-2026               /blog/agentic-workflows  301
+/blog/the-untapped-valuation-potential-of-ai-driven-businesses                                                /blog/ai-business-valuation  301
+/blog/why-most-ai-agent-projects-fail-in-production-and-how-enterprise-teams-are-fixing-it                    /blog/why-ai-agent-projects-fail  301
+/blog/why-traditional-business-models-are-at-risk-of-disruption-by-ai-platforms                               /blog/traditional-models-at-risk  301
+
+# Podcast, long WordPress slugs -> short slugs
+/podcast/ai-avatars-transforming-sales-and-customer-engagement                                               /podcast/ai-avatars-sales-and-engagement  301
+/podcast/business-model-ai-platform-valuation-jay-pandya                                                     /podcast/business-model-ai-platform-valuation  301
+/podcast/every-industry-will-be-disrupted-jay-pandya                                                         /podcast/every-industry-will-be-disrupted  301
+/podcast/human-first-technology-tech-strategy-jay-pandya                                                     /podcast/human-first-technology  301
+/podcast/scaling-human-expertise-with-ai-jay-pandya-on-the-future-of-digital-solutions                       /podcast/scaling-human-expertise-with-ai  301
+/podcast/scope-creep-the-silent-killer-of-product-market-fit-jay-pandya-on-startup-discipline                 /podcast/scope-creep-and-product-market-fit  301
+/podcast/using-ai-to-share-knowledge-with-the-world-jay-pandya                                                /podcast/using-ai-to-share-knowledge  301
+
+# BlackVault, spun out to its own domain
+/blackvault-private-ai-infrastructure                                                                        https://blackvault.au/  301
+/blackvault                                                                                                   https://blackvault.au/  301
