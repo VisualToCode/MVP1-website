@@ -298,6 +298,13 @@ section[data-screen-label="Home, capabilities"] .cards.c3 > .card:nth-child(3){f
 .light .checks li::before,.grey .checks li::before{background:var(--blue)}
 .checks strong{font-family:var(--fh);font-weight:700}
 
+.faqlist{border-top:1px solid var(--line)}
+.faqitem{padding:clamp(22px,3vw,30px) 0;border-bottom:1px solid var(--line)}
+.faqitem h3{margin-bottom:10px}
+.faqitem p{color:var(--dim);max-width:70ch}
+.light .faqitem p,.grey .faqitem p{color:var(--text-light)}
+.light .faqlist,.light .faqitem,.grey .faqlist,.grey .faqitem{border-color:var(--line-light)}
+
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
 .stats.s3{grid-template-columns:repeat(3,1fr)}
