@@ -1,4 +1,4 @@
-/* AI Readiness Assessment — runs entirely in the browser.
+/* AI Readiness Assessment, runs entirely in the browser.
    Ten questions across four dimensions. Nothing is transmitted anywhere unless
    the visitor chooses to send their result via the follow-up form. */
 (function () {
@@ -15,19 +15,19 @@
 
   var QUESTIONS = [
     { d: 'process', q: 'How well documented are the workflows you would want to automate?',
-      a: ['Not documented — they live in people’s heads', 'Partly documented, often out of date', 'Documented and broadly accurate', 'Documented, owned and reviewed regularly'] },
+      a: ['Not documented, they live in people’s heads', 'Partly documented, often out of date', 'Documented and broadly accurate', 'Documented, owned and reviewed regularly'] },
     { d: 'process', q: 'How much of the work is genuinely repeatable rather than case-by-case judgement?',
       a: ['Almost everything needs judgement', 'Some repeatable steps inside bigger judgement calls', 'Substantial repeatable volume', 'Large, high-volume repeatable processes'] },
     { d: 'process', q: 'Do you know what your highest-cost manual processes actually cost you?',
-      a: ['No — we have never measured it', 'A rough sense, not measured', 'Measured for some processes', 'Measured, with hours and cost per process'] },
+      a: ['No, we have never measured it', 'A rough sense, not measured', 'Measured for some processes', 'Measured, with hours and cost per process'] },
     { d: 'data', q: 'Where does the data those workflows need actually live?',
       a: ['Spread across inboxes, drives and people', 'Several systems that do not talk to each other', 'Mostly in core systems, some gaps', 'In core systems, accessible via APIs'] },
     { d: 'data', q: 'How much would you trust that data to be accurate right now?',
       a: ['We know it is unreliable', 'Reliable in parts, unverified elsewhere', 'Generally reliable, some known gaps', 'Reliable, with owners and quality checks'] },
-    { d: 'systems', q: 'Can your core systems be integrated with — do they have APIs or supported connectors?',
+    { d: 'systems', q: 'Can your core systems be integrated with, do they have APIs or supported connectors?',
       a: ['No, or we do not know', 'Some do, the important ones do not', 'Most do', 'Yes, and we already integrate them'] },
     { d: 'systems', q: 'How are permissions and access currently managed across those systems?',
-      a: ['Informally — shared logins are common', 'Per system, no central view', 'Role-based in most systems', 'Centrally managed with role-based access'] },
+      a: ['Informally, shared logins are common', 'Per system, no central view', 'Role-based in most systems', 'Centrally managed with role-based access'] },
     { d: 'governance', q: 'If an automated process made a wrong decision, who would own it?',
       a: ['Nobody defined', 'It would land with whoever noticed', 'A team owns it informally', 'A named owner, with an escalation path'] },
     { d: 'governance', q: 'Do you have a policy for how AI may handle sensitive or regulated data?',
@@ -38,7 +38,7 @@
 
   var BANDS = [
     { max: 40, name: 'Foundations first',
-      verdict: 'Automating now would amplify problems rather than remove them. The return is in the groundwork — and it is usually six to twelve weeks of it, not a year.',
+      verdict: 'Automating now would amplify problems rather than remove them. The return is in the groundwork, and it is usually six to twelve weeks of it, not a year.',
       next: ['Document the two or three processes that consume the most hours, as they actually run today.',
              'Establish a single source of truth for the data those processes depend on.',
              'Name an owner for AI decisions before any agent is deployed.'] },
@@ -48,12 +48,12 @@
              'Fix data access for that process specifically rather than across the business.',
              'Define human approval points before launch, not after.'] },
     { max: 80, name: 'Ready to build',
-      verdict: 'The foundations will carry an agent build. The risk now shifts from readiness to scope — choosing work that pays back quickly and measuring it honestly.',
+      verdict: 'The foundations will carry an agent build. The risk now shifts from readiness to scope, choosing work that pays back quickly and measuring it honestly.',
       next: ['Scope two or three processes with a measurable baseline for each.',
              'Set up monitoring and cost tracking before go-live, not after.',
              'Plan where the capacity you free up will be redeployed.'] },
     { max: 100, name: 'Ready to scale',
-      verdict: 'You are past the readiness question. The constraint is sequencing and governance at scale — keeping a register of what is running, who owns it, and what it costs.',
+      verdict: 'You are past the readiness question. The constraint is sequencing and governance at scale, keeping a register of what is running, who owns it, and what it costs.',
       next: ['Build a register of agents with named owners and review cadence.',
              'Standardise the deployment and audit pattern so each new agent is cheaper than the last.',
              'Track cost against efficiency monthly, per agent.'] }

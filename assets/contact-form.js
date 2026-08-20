@@ -2,9 +2,13 @@
 
    ============================================================================
    SET THIS BEFORE GOING LIVE.
-   Point ENDPOINT at whatever will actually receive the enquiry — a Formspree /
-   Basin / Netlify Forms URL, or your own handler. Until it is set, the form
-   falls back to a mailto: link so an enquiry is never silently discarded.
+   Point ENDPOINT at whatever will actually receive the enquiry, a GoHighLevel
+   form action URL, Formspree, Basin, Netlify Forms, or your own handler.
+   Until it is set, the form falls back to a mailto: link so an enquiry is
+   never silently discarded. Note: the "What are you interested in?" field
+   requires at least one checkbox in GHL; native HTML can't enforce
+   "at least one of a group" on checkboxes, so that check happens server-side
+   once wired into GHL.
    ============================================================================ */
 var MVP1_FORM_ENDPOINT = ''; // e.g. 'https://formspree.io/f/xxxxxxxx'
 var MVP1_FALLBACK_EMAIL = 'info@mvp1.com.au';
@@ -33,7 +37,7 @@ var MVP1_FALLBACK_EMAIL = 'info@mvp1.com.au';
     input.setAttribute('aria-invalid', message ? 'true' : 'false');
   }
 
-  // Validate on blur, and again on input once a field has already errored —
+  // Validate on blur, and again on input once a field has already errored -
   // never while the visitor is still mid-answer.
   Array.prototype.forEach.call(form.querySelectorAll('input,textarea,select'), function (input) {
     var check = function () {
@@ -57,7 +61,7 @@ var MVP1_FALLBACK_EMAIL = 'info@mvp1.com.au';
       if (key !== 'company_website') lines.push(key + ': ' + value);
     });
     var href = 'mailto:' + MVP1_FALLBACK_EMAIL +
-      '?subject=' + encodeURIComponent('Website enquiry — ' + (data.get('name') || '')) +
+      '?subject=' + encodeURIComponent('Website enquiry, ' + (data.get('full_name') || '')) +
       '&body=' + encodeURIComponent(lines.join('\n'));
     window.location.href = href;
     setStatus('ok', 'Opening your email app so you can send this to us directly.');
@@ -84,8 +88,8 @@ var MVP1_FALLBACK_EMAIL = 'info@mvp1.com.au';
 
     var data = new FormData(form);
 
-    // Honeypot — real people never fill a hidden field in.
-    if (data.get('company_website')) { setStatus('ok', 'Thanks — we’ll be in touch.'); return; }
+    // Honeypot, real people never fill a hidden field in.
+    if (data.get('company_website')) { setStatus('ok', 'Thanks, we’ll be in touch.'); return; }
 
     if (!MVP1_FORM_ENDPOINT) { mailtoFallback(data); return; }
 
@@ -97,14 +101,14 @@ var MVP1_FALLBACK_EMAIL = 'info@mvp1.com.au';
       .then(function (res) {
         if (!res.ok) throw new Error('Request failed: ' + res.status);
         form.reset();
-        setStatus('ok', 'Thanks — we’ll be in touch within one business day.');
+        setStatus('ok', 'Thanks, we’ll be in touch within one business day.');
       })
       .catch(function () {
         setStatus('error', 'Something went wrong sending that. Please email ' + MVP1_FALLBACK_EMAIL + ' or call +61 483 920 790.');
       })
       .finally(function () {
         if (submit) submit.disabled = false;
-        if (submitLabel) submitLabel.textContent = 'Book a discovery call';
+        if (submitLabel) submitLabel.textContent = 'Send message';
       });
   });
 })();

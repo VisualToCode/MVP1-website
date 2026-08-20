@@ -18,7 +18,7 @@
 ## Specialized AI & Enterprise Infrastructure
 - [AI Agents](https://mvp1.com.au/ai-agents.html): Production-ready autonomous artificial intelligence agents optimized for corporate workflow automation.
 - [Enterprise Solutions](https://mvp1.com.au/enterprise.html): Enterprise-level software consulting, technical systems architecture, and legacy systems integration.
-- [BlackVault™: Private AI Infrastructure](https://blackvault.au/): MVP1 Ventures' enterprise and government venture — high-security, sovereign private cloud environments engineered for secure on-premise AI deployments.
+- [BlackVault™: Private AI Infrastructure](https://blackvault.au/): MVP1 Ventures' enterprise and government venture, high-security, sovereign private cloud environments engineered for secure on-premise AI deployments.
 - [AI Maturity](https://mvp1.com.au/aimaturity.html): Maturity models and strategic readiness frameworks evaluating corporate artificial intelligence adoption.
 
 ## Case Studies & Applied Engineering
@@ -26,7 +26,7 @@
 - [Funded Tech Scale Ups & SMB's](https://mvp1.com.au/funded-tech-startups-scale-ups-smbs.html): Specific scaling resources, growth strategies, and infrastructure playbooks for funded tech ventures.
 
 ## Resources, Learning & Legal
-- [Resources](https://mvp1.com.au/resources.html): Central library containing blog articles, podcast episodes, and strategic toolkits — filterable by type.
+- [Resources](https://mvp1.com.au/resources.html): Central library containing blog articles, podcast episodes, and strategic toolkits, filterable by type.
 - [Podcast](https://mvp1.com.au/podcasts.html): Audio interviews and panels featuring tech founders and AI researchers.
 - [Business Model Workbook](https://mvp1.com.au/resources/business-model-workbook.html): Free downloadable workbook on business model strategy and enterprise valuation.
 - [Terms & Conditions](https://mvp1.com.au/terms-conditions.html): Legal frameworks, operational parameters, and contract terms.

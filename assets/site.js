@@ -1,4 +1,4 @@
-/* MVP1 Ventures — behaviour
+/* MVP1 Ventures, behaviour
    The header, footer and every internal link are now static HTML, so the site
    still works (and is still crawlable) if this file never loads. Everything
    below is progressive enhancement only. */
@@ -75,7 +75,7 @@
       burger.setAttribute('aria-expanded', 'false');
       document.documentElement.style.overflow = '';
       setInert(true);
-      // Send focus back where it came from — and to the burger if that is
+      // Send focus back where it came from, and to the burger if that is
       // no longer a sensible target, so it never falls back to <body>.
       var target = (lastFocused && lastFocused.focus && document.contains(lastFocused) &&
                     lastFocused !== document.body) ? lastFocused : burger;
@@ -124,7 +124,7 @@
     var vh = window.innerHeight || document.documentElement.clientHeight || 800;
 
     Array.prototype.forEach.call(document.querySelectorAll('[data-reveal]'), function (el) {
-      // Already in view on load? Show it immediately — never fade in content
+      // Already in view on load? Show it immediately, never fade in content
       // the visitor can already see.
       var box = el.getBoundingClientRect();
       if (box.top < vh * 0.9) return;
@@ -135,7 +135,7 @@
 
   /* ---------- background video ----------
      Sources are attached by JS rather than sitting in the markup, so the clips
-     are never downloaded for people who asked for reduced motion — they keep
+     are never downloaded for people who asked for reduced motion, they keep
      the poster frame. Each one also only loads once it is actually on screen
      and pauses when it is not, so a visitor who never scrolls to the closing
      CTA never pays for its video. */
@@ -208,10 +208,10 @@
   });
 
   /* ---------- home: capabilities ambient glow ----------
-     Purely decorative — two drifting colour fields plus a light that
+     Purely decorative, two drifting colour fields plus a light that
      follows the pointer. Skipped outright under reduced motion, same
      treatment as the background video above. */
-  var capSection = document.querySelector('section[data-screen-label="Home — capabilities"]');
+  var capSection = document.querySelector('section[data-screen-label="Home, capabilities"]');
   if (capSection && !reduced) {
     var b1 = document.createElement('div'); b1.className = 'cap-blob b1';
     var b2 = document.createElement('div'); b2.className = 'cap-blob b2';
@@ -228,7 +228,7 @@
 
   /* ---------- contact form: validation and submit feedback ----------
      The markup already carries the hooks (field-error, form-status,
-     aria-invalid) — this wires them up. Posts with fetch so a rejected
+     aria-invalid), this wires them up. Posts with fetch so a rejected
      submission never costs the visitor their message to a reload. */
   var form = document.getElementById('contact-form');
   if (form) {
@@ -271,7 +271,7 @@
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (honeypot && honeypot.value) return; // spam bot filled the hidden field — go quiet, not loud
+      if (honeypot && honeypot.value) return; // spam bot filled the hidden field, go quiet, not loud
 
       var required = Array.prototype.filter.call(form.querySelectorAll('input,textarea'), function (input) {
         return input.required;
@@ -291,7 +291,7 @@
         .then(function (res) {
           if (!res.ok) throw new Error('bad status');
           if (statusEl) {
-            statusEl.textContent = 'Message sent — we reply within one business day.';
+            statusEl.textContent = 'Message sent, we reply within one business day.';
             statusEl.dataset.state = 'ok';
             statusEl.hidden = false;
           }

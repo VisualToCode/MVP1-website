@@ -1,7 +1,7 @@
 /* Resource index.
    [type, title, href, cta, sourceLabel?]
    Internal hrefs are relative to the site root. External entries (press
-   coverage) open in a new tab — they are third-party publications, not
+   coverage) open in a new tab, they are third-party publications, not
    pages we host. */
 window.RESOURCES = [
 ["ebook","Before You Build AI, Understand This First: Your Business Model Is Everything","resources/business-model-workbook.html","Get the workbook"],
@@ -23,11 +23,11 @@ window.RESOURCES = [
 ["blog","Why Traditional Business Models Are at Risk of Disruption by AI Platforms","blog/traditional-models-at-risk.html","Read Article"],
 ["blog","How Data Fuels the AI Revolution: Lessons from WhatsApp's $19 Billion Valuation","blog/data-fuels-ai.html","Read Article"],
 
-["podcast","Every Industry Will Be Disrupted — The Only Question Is Whether You'll Be the One Doing It","podcast/every-industry-will-be-disrupted.html","Listen Now"],
-["podcast","Why Your Business Model Is Leaving Millions on the Table — AI and Platform Valuation","podcast/business-model-ai-platform-valuation.html","Listen Now"],
+["podcast","Every Industry Will Be Disrupted, The Only Question Is Whether You'll Be the One Doing It","podcast/every-industry-will-be-disrupted.html","Listen Now"],
+["podcast","Why Your Business Model Is Leaving Millions on the Table, AI and Platform Valuation","podcast/business-model-ai-platform-valuation.html","Listen Now"],
 ["podcast","Why Human-First Technology Beats Every Other Tech Strategy","podcast/human-first-technology.html","Listen Now"],
 ["podcast","Using AI to Share Knowledge with the World","podcast/using-ai-to-share-knowledge.html","Listen Now"],
-["podcast","Scaling Human Expertise with AI — The Future of Digital Solutions","podcast/scaling-human-expertise-with-ai.html","Listen Now"],
+["podcast","Scaling Human Expertise with AI, The Future of Digital Solutions","podcast/scaling-human-expertise-with-ai.html","Listen Now"],
 ["podcast","AI Avatars: Transforming Sales and Customer Engagement","podcast/ai-avatars-sales-and-engagement.html","Listen Now"],
 ["podcast","Scope Creep: The Silent Killer of Product-Market Fit","podcast/scope-creep-and-product-market-fit.html","Listen Now"],
 

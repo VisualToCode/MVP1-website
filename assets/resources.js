@@ -31,7 +31,7 @@
     var items = window.RESOURCES.filter(function (r) { return !type || r[0] === type; });
     if (!items.length) {
       list.innerHTML = '';
-      list.insertAdjacentHTML('afterend', '<p class="res-empty" id="resempty">Nothing here yet — try another filter.</p>');
+      list.insertAdjacentHTML('afterend', '<p class="res-empty" id="resempty">Nothing here yet, try another filter.</p>');
     } else {
       var empty = document.getElementById('resempty');
       if (empty) empty.remove();

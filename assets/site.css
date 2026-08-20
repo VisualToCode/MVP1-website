@@ -1,11 +1,11 @@
-/* MVP1 Ventures — site styles
+/* MVP1 Ventures, site styles
    Fonts are loaded via <link> in each page <head>, not @import, so the
    browser can start fetching them without waiting for this file to parse. */
 
 :root{
   /* brand */
   --blue:#0074BE;
-  --blue-lift:#3FA3E4;      /* blue at 4.5:1+ on the dark ground — use for links/labels on dark */
+  --blue-lift:#3FA3E4;      /* blue at 4.5:1+ on the dark ground, use for links/labels on dark */
   --yellow:#FFD90F;
   --navy:#003D66;
   --ink:#00131F;
@@ -17,7 +17,7 @@
   --dim:rgba(255,255,255,.68);
   --dim-strong:rgba(255,255,255,.78);
   --line:rgba(255,255,255,.13);
-  --line-strong:rgba(255,255,255,.36);  /* form borders — meets 3:1 non-text contrast */
+  --line-strong:rgba(255,255,255,.36);  /* form borders, meets 3:1 non-text contrast */
   --line-light:rgba(0,61,102,.16);
   --text-light:#43505c;
   --text-light-2:#4c5964;
@@ -31,7 +31,7 @@
   --maxw:1320px;
   --pad:clamp(20px,5vw,72px);
 
-  /* spacing scale — replaces the ad-hoc inline margins */
+  /* spacing scale, replaces the ad-hoc inline margins */
   --s-1:6px;
   --s-2:12px;
   --s-3:14px;
@@ -59,7 +59,7 @@ a{color:var(--blue-lift);text-decoration:none}
 a:hover{color:var(--yellow)}
 img{max-width:100%;display:block}
 
-/* focus — one visible system for every interactive element */
+/* focus, one visible system for every interactive element */
 :focus{outline:none}
 :focus-visible{outline:2px solid var(--yellow);outline-offset:3px;border-radius:2px}
 .light :focus-visible,.grey :focus-visible{outline-color:var(--blue)}
@@ -76,7 +76,7 @@ section{position:relative}
 .grey{background:var(--grey);color:var(--text)}
 .grey h2,.grey h3,.grey h4{color:var(--navy)}
 
-/* spacing utilities — replaces repeated inline margin-top values */
+/* spacing utilities, replaces repeated inline margin-top values */
 .mt-1{margin-top:var(--s-1)}
 .mt-2{margin-top:var(--s-2)}
 .mt-3{margin-top:var(--s-3)}
@@ -137,7 +137,7 @@ section{position:relative}
 .nlink[aria-current]{color:#fff}
 .nlink[aria-current]::after{transform:scaleX(1)}
 
-/* submenu — no dead gap between trigger and panel, so the hover chain never breaks */
+/* submenu, no dead gap between trigger and panel, so the hover chain never breaks */
 .has-sub{position:relative}
 .sub{position:absolute;top:100%;left:-18px;min-width:270px;padding-top:14px;opacity:0;visibility:hidden;transform:translateY(6px);transform-origin:top left;
   transition:opacity var(--t-fast) var(--ease-out),transform var(--t-fast) var(--ease-out),visibility 0s linear var(--t-fast)}
@@ -174,7 +174,7 @@ section{position:relative}
 .hero-compact{min-height:auto}
 .hero .wrap{position:relative;z-index:2;width:100%}
 
-/* hero motion — full-bleed behind the whole hero.
+/* hero motion, full-bleed behind the whole hero.
    `screen` drops the clip's near-black ground so the network reads as part of
    the gradient rather than a video pasted on top of it. The scrim above it is
    what keeps the copy legible: heaviest on the left where the text sits,
@@ -186,7 +186,7 @@ section{position:relative}
     linear-gradient(90deg,rgba(0,19,31,.95) 0%,rgba(0,19,31,.92) 30%,rgba(0,19,31,.76) 52%,rgba(0,19,31,.40) 78%,rgba(0,19,31,.40) 100%),
     linear-gradient(180deg,rgba(0,19,31,.72) 0%,rgba(0,19,31,.30) 26%,rgba(0,19,31,.30) 62%,rgba(0,19,31,.88) 100%)}
 /* the hero copy sits over moving video, so it runs brighter and shorter than
-   body copy elsewhere — measured against the worst frame of the loop, not one still */
+   body copy elsewhere, measured against the worst frame of the loop, not one still */
 .hero .lede{color:rgba(255,255,255,.86);max-width:52ch}
 @media(max-width:900px){
   /* the copy occupies most of the hero on a phone, so the scrim carries more weight */
@@ -203,7 +203,7 @@ section{position:relative}
 .scroll-hint::after{content:"";width:1px;height:38px;background:linear-gradient(var(--yellow),transparent);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
 
-/* interior page hero — sized to its content, not to the viewport */
+/* interior page hero, sized to its content, not to the viewport */
 .phero{padding:clamp(122px,13vw,168px) 0 clamp(54px,7vw,96px);position:relative;overflow:hidden}
 .phero .hero-bg::before{background:radial-gradient(70% 85% at 84% 0%,rgba(0,116,190,.45),transparent 60%),radial-gradient(44% 62% at 2% 100%,rgba(255,217,15,.26),transparent 66%),radial-gradient(30% 40% at 62% 96%,rgba(255,217,15,.12),transparent 70%),linear-gradient(180deg,#00131F,#041D2E)}
 .phero .wrap{position:relative;z-index:2}
@@ -211,7 +211,7 @@ section{position:relative}
 /* layout */
 .two{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,90px);align-items:start}
 .sticky{position:sticky;top:110px}
-/* editorial photography — full frame, no forced crop, hairline border matching card edges */
+/* editorial photography, full frame, no forced crop, hairline border matching card edges */
 .person{margin:0}
 .person-photo{position:relative;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 48px rgba(0,0,0,.4)}
 .person-photo img{display:block;width:100%;height:auto}
@@ -244,15 +244,15 @@ section{position:relative}
 .card-em{display:flex;flex-direction:column;justify-content:flex-end;background:var(--blue)}
 .card-em h3{color:#fff}
 .card-em p{color:#fff}
-/* yellow-on-blue is only 3.58:1 — fine as a graphic, not as 12px text */
+/* yellow-on-blue is only 3.58:1, fine as a graphic, not as 12px text */
 .card-em .go{color:#fff}
 .card-plain p{color:inherit;font-size:18px}
 .card-wide{grid-column:span 2}
 
-/* home — capabilities: AI Agents & Automation pulled forward under layered
+/* home, capabilities: AI Agents & Automation pulled forward under layered
    glow, the rest recede. Scoped to this one section only. */
-section[data-screen-label="Home — capabilities"]{position:relative;overflow:hidden;isolation:isolate}
-section[data-screen-label="Home — capabilities"] > .wrap{position:relative;z-index:2}
+section[data-screen-label="Home, capabilities"]{position:relative;overflow:hidden;isolation:isolate}
+section[data-screen-label="Home, capabilities"] > .wrap{position:relative;z-index:2}
 .cap-blob{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0;opacity:.5}
 .cap-blob.b1{width:520px;height:520px;left:-140px;top:-160px;background:radial-gradient(circle,var(--blue) 0%,transparent 70%);animation:cap-drift1 26s ease-in-out infinite alternate}
 .cap-blob.b2{width:460px;height:460px;right:-120px;top:60px;background:radial-gradient(circle,var(--blue-lift) 0%,transparent 70%);animation:cap-drift2 22s ease-in-out infinite alternate}
@@ -260,18 +260,18 @@ section[data-screen-label="Home — capabilities"] > .wrap{position:relative;z-i
 @keyframes cap-drift2{from{transform:translate(0,0) scale(1)}to{transform:translate(-50px,-30px) scale(1.08)}}
 .cap-cursor{position:absolute;width:640px;height:640px;border-radius:50%;left:0;top:0;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(63,163,228,.16) 0%,transparent 65%);mix-blend-mode:screen;pointer-events:none;z-index:1;opacity:0;
   transition:left .35s var(--ease-out),top .35s var(--ease-out),opacity .4s var(--ease-out)}
-section[data-screen-label="Home — capabilities"]:hover .cap-cursor{opacity:1}
-section[data-screen-label="Home — capabilities"] .cards.c3{background:transparent;border:none;gap:18px}
-section[data-screen-label="Home — capabilities"] .card,
-section[data-screen-label="Home — capabilities"] .card-em{border-radius:10px;background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.09);
+section[data-screen-label="Home, capabilities"]:hover .cap-cursor{opacity:1}
+section[data-screen-label="Home, capabilities"] .cards.c3{background:transparent;border:none;gap:18px}
+section[data-screen-label="Home, capabilities"] .card,
+section[data-screen-label="Home, capabilities"] .card-em{border-radius:10px;background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.09);
   backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);box-shadow:inset 0 1px 0 rgba(255,255,255,.07);
   transition:transform .55s var(--ease-out),box-shadow .55s var(--ease-out),opacity .55s var(--ease-out),filter .55s var(--ease-out)}
-section[data-screen-label="Home — capabilities"] .card-em{background:linear-gradient(160deg,rgba(255,217,15,.14),rgba(255,217,15,.04));border-color:rgba(255,217,15,.28)}
-section[data-screen-label="Home — capabilities"] .card-em h3,section[data-screen-label="Home — capabilities"] .card-em p{color:#fff}
-section[data-screen-label="Home — capabilities"] .card-em .go{color:var(--yellow)}
-section[data-screen-label="Home — capabilities"] .cards.c3 > .card,
-section[data-screen-label="Home — capabilities"] .cards.c3 > .card-em{filter:saturate(.6);opacity:.5;transform:scale(.97)}
-section[data-screen-label="Home — capabilities"] .cards.c3 > .card:nth-child(3){filter:none;opacity:1;transform:scale(1.035);z-index:3;border-color:rgba(255,217,15,.4);
+section[data-screen-label="Home, capabilities"] .card-em{background:linear-gradient(160deg,rgba(255,217,15,.14),rgba(255,217,15,.04));border-color:rgba(255,217,15,.28)}
+section[data-screen-label="Home, capabilities"] .card-em h3,section[data-screen-label="Home, capabilities"] .card-em p{color:#fff}
+section[data-screen-label="Home, capabilities"] .card-em .go{color:var(--yellow)}
+section[data-screen-label="Home, capabilities"] .cards.c3 > .card,
+section[data-screen-label="Home, capabilities"] .cards.c3 > .card-em{filter:saturate(.6);opacity:.5;transform:scale(.97)}
+section[data-screen-label="Home, capabilities"] .cards.c3 > .card:nth-child(3){filter:none;opacity:1;transform:scale(1.035);z-index:3;border-color:rgba(255,217,15,.4);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 0 1px rgba(255,217,15,.5),0 0 40px rgba(255,217,15,.28),0 0 110px rgba(0,116,190,.28),0 30px 60px rgba(0,0,0,.5)}
 .go{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-weight:700;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)}
 .card .go{margin-top:20px}
@@ -321,7 +321,7 @@ section[data-screen-label="Home — capabilities"] .cards.c3 > .card:nth-child(3
 
 /* cta band */
 .cta{background:linear-gradient(120deg,var(--navy),#00131F 70%);position:relative;overflow:hidden;text-align:center;padding:clamp(70px,9vw,130px) 0}
-/* optional motion behind a closing CTA — same treatment as the hero */
+/* optional motion behind a closing CTA, same treatment as the hero */
 .cta-media{isolation:isolate}
 .cta-media{padding-block:clamp(96px,12vw,170px)}
 .cta-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 32%;
@@ -439,6 +439,9 @@ section[data-screen-label="Home — capabilities"] .cards.c3 > .card:nth-child(3
 .field-error{font-size:13.5px;color:#FF8A7A;min-height:18px;opacity:0;transform:translateY(-4px);
   transition:opacity var(--t-fast) var(--ease-out),transform var(--t-fast) var(--ease-out)}
 .field-error:not(:empty){opacity:1;transform:translateY(0)}
+.field-check{display:flex;flex-wrap:wrap;gap:10px 22px;padding-top:4px}
+.field-check label{display:flex;align-items:center;gap:8px;font-family:var(--fb);font-size:15px;color:#fff;cursor:pointer}
+.field-check input[type="checkbox"],.field-check input[type="radio"]{width:18px;height:18px;accent-color:var(--yellow);cursor:pointer;flex:none}
 .form-status{font-size:14.5px;padding:14px 16px;border:1px solid var(--line-strong)}
 .form-status:not([hidden]){animation:rise-in 320ms var(--ease-out)}
 .form-status[data-state="ok"]{border-color:var(--yellow);color:#fff}
@@ -481,7 +484,7 @@ section[data-screen-label="Home — capabilities"] .cards.c3 > .card:nth-child(3
 .light .article th,.grey .article th{color:var(--blue)}
 .article tr:last-child td{border-bottom:0}
 
-/* long-form legal documents — clause numbering ported verbatim (same
+/* long-form legal documents, clause numbering ported verbatim (same
    counter names, same chaining, same per-level format) from the counter
    rules on the live mvp1.com.au terms page, so cross-references like
    "clause 1.4(a)" still point at the same clause here. Levels 1–2 chain
@@ -579,7 +582,7 @@ section[data-screen-label="Home — capabilities"] .cards.c3 > .card:nth-child(3
 .light .assess-next li::before,.grey .assess-next li::before{color:var(--blue)}
 @media(max-width:560px){.assess-dims li{grid-template-columns:1fr 48px}.assess-dims li .assess-dim-name{grid-column:1/-1}}
 
-/* reveal — short, and only on section groups */
+/* reveal, short, and only on section groups */
 .rv{opacity:0;transform:translateY(12px);transition:opacity 400ms var(--ease-out),transform 400ms var(--ease-out)}
 .rv.in{opacity:1;transform:none}
 
@@ -614,9 +617,9 @@ section[data-screen-label="Home — capabilities"] .cards.c3 > .card:nth-child(3
   .mclose:hover{color:var(--yellow)}
   .fcols a:hover{color:#fff}
   .iso:hover{border-color:var(--yellow)}
-  section[data-screen-label="Home — capabilities"] .cards.c3 > .card:hover,
-  section[data-screen-label="Home — capabilities"] .cards.c3 > .card-em:hover{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.015));opacity:.7;filter:saturate(.8);transform:translateY(-2px) scale(.98)}
-  section[data-screen-label="Home — capabilities"] .cards.c3 > .card:nth-child(3):hover{transform:translateY(-3px) scale(1.05);
+  section[data-screen-label="Home, capabilities"] .cards.c3 > .card:hover,
+  section[data-screen-label="Home, capabilities"] .cards.c3 > .card-em:hover{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.015));opacity:.7;filter:saturate(.8);transform:translateY(-2px) scale(.98)}
+  section[data-screen-label="Home, capabilities"] .cards.c3 > .card:nth-child(3):hover{transform:translateY(-3px) scale(1.05);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 0 1px rgba(255,217,15,.6),0 0 50px rgba(255,217,15,.34),0 0 130px rgba(0,116,190,.32),0 34px 70px rgba(0,0,0,.55)}
 }
 
@@ -646,14 +649,14 @@ section[data-screen-label="Home — capabilities"] .cards.c3 > .card:nth-child(3
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{transition-duration:1ms!important;animation-duration:1ms!important}
-  /* infinite animations must be stopped outright — a near-zero duration
+  /* infinite animations must be stopped outright, a near-zero duration
      turns them into a strobe, which is the opposite of what was asked for */
   .marq div,.scroll-hint::after{animation:none!important}
   .marq div{transform:none}
   /* shake reads as jitter, not feedback, once motion is turned down */
   .field.invalid input,.field.invalid textarea{animation:none!important}
   .cap-blob{animation:none!important}
-  /* the hero clip never starts under reduced motion — the poster frame stands in */
+  /* the hero clip never starts under reduced motion, the poster frame stands in */
   .rv{opacity:1;transform:none}
   .row:hover{transform:none}
 }
