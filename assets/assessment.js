@@ -118,7 +118,7 @@
       '<h3 class="h-sm mt-6">What to do first</h3>' +
       '<ol class="assess-next">' + band.next.map(function (n) { return '<li><span>' + esc(n) + '</span></li>'; }).join('') + '</ol>' +
       '<div class="btns mt-6">' +
-      '<a class="btn btn-p" href="contact.html">Talk through this result <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true" focusable="false"><path d="M10 1l4 4-4 4M0 5h13.5" stroke="currentColor" stroke-width="1.5"/></svg></a>' +
+      '<a class="btn btn-p" href="/contact">Talk through this result <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true" focusable="false"><path d="M10 1l4 4-4 4M0 5h13.5" stroke="currentColor" stroke-width="1.5"/></svg></a>' +
       '<button class="btn btn-g" type="button" data-act="restart">Start again</button></div>' +
       '<p class="muted fine mt-4">Your answers stayed in this browser. Nothing was sent anywhere.</p>' +
       '</div>';
