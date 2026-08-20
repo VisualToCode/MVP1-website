@@ -443,6 +443,18 @@ section[data-screen-label="Home, capabilities"] .cards.c3 > .card:nth-child(3){f
 .field-check label{display:flex;align-items:center;gap:8px;font-family:var(--fb);font-size:15px;color:#fff;cursor:pointer}
 .field-check input[type="checkbox"],.field-check input[type="radio"]{width:18px;height:18px;accent-color:var(--yellow);cursor:pointer;flex:none}
 .form-status{font-size:14.5px;padding:14px 16px;border:1px solid var(--line-strong)}
+
+/* logo marquee, client logos and press mentions */
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;align-items:center;gap:36px;width:max-content;animation:marquee 38s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.logo-card{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:6px;padding:14px 22px;height:64px;flex:none}
+.logo-card img{height:32px;width:auto;max-width:140px;object-fit:contain}
+.press-track{display:flex;align-items:center;gap:44px;width:max-content;animation:marquee 30s linear infinite}
+.press-item{font-family:var(--fh);font-weight:700;font-size:18px;letter-spacing:.01em;color:var(--dim-strong);flex:none;transition:color var(--t-fast) var(--ease-out)}
+.press-item:hover{color:var(--yellow)}
+@media (prefers-reduced-motion: reduce){.marquee-track,.press-track{animation:none}}
 .form-status:not([hidden]){animation:rise-in 320ms var(--ease-out)}
 .form-status[data-state="ok"]{border-color:var(--yellow);color:#fff}
 .form-status[data-state="error"]{border-color:#FF8A7A;color:#FF8A7A}
