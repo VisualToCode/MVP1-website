@@ -1,0 +1,40 @@
+# MVP Ventures
+
+> MVP1 Ventures is an AI-led software and platform strategy company helping startups, scale-ups, and enterprises design, build, and scale disruptive digital solutions through business strategy, UX/UI design, AI/ML development, and technical execution.
+
+## Company & Core Profile
+- [Overview](https://mvp1.com.au/overview.html): Operational focus areas, strategic objectives, and corporate digital engineering capabilities.
+- [About us](https://mvp1.com.au/about-us.html): Corporate mission, vision statements, and executive leadership details.
+- [Contact](https://mvp1.com.au/contact.html): Communication channels for client onboarding, partnerships, and technical strategy requests.
+- [News & Media](https://mvp1.com.au/news-media.html): Press releases, media coverage, and public announcements regarding MVP Ventures.
+- [Careers](https://mvp1.com.au/careers.html): Information on joining the MVP1 Ventures team.
+
+## Services & Commercial Strategy
+- [What we build](https://mvp1.com.au/what-we-build.html): Custom digital platforms, full-stack software products, and scalable software applications.
+- [Platform Stabilisation](https://mvp1.com.au/platform-stabilisation.html): System auditing frameworks, reliability engineering, and optimization methodologies for digital platforms.
+- [Accelerate Program](https://mvp1.com.au/accelerate-program.html): Dedicated rapid-scaling program built for fast-tracking tech deployment in scale-ups and SMBs.
+- [Pricing](https://mvp1.com.au/rates.html): How MVP1 Ventures prices product builds, platform stabilisation, and AI automation engagements.
+
+## Specialized AI & Enterprise Infrastructure
+- [AI Agents](https://mvp1.com.au/ai-agents.html): Production-ready autonomous artificial intelligence agents optimized for corporate workflow automation.
+- [Enterprise Solutions](https://mvp1.com.au/enterprise.html): Enterprise-level software consulting, technical systems architecture, and legacy systems integration.
+- [BlackVault™: Private AI Infrastructure](https://blackvault.au/): MVP1 Ventures' enterprise and government venture — high-security, sovereign private cloud environments engineered for secure on-premise AI deployments.
+- [AI Maturity](https://mvp1.com.au/aimaturity.html): Maturity models and strategic readiness frameworks evaluating corporate artificial intelligence adoption.
+
+## Case Studies & Applied Engineering
+- [Our Work](https://mvp1.com.au/our-work.html): Main project portfolio showcasing verified engineering client case studies.
+- [Funded Tech Scale Ups & SMB's](https://mvp1.com.au/funded-tech-startups-scale-ups-smbs.html): Specific scaling resources, growth strategies, and infrastructure playbooks for funded tech ventures.
+
+## Resources, Learning & Legal
+- [Resources](https://mvp1.com.au/resources.html): Central library containing blog articles, podcast episodes, and strategic toolkits — filterable by type.
+- [Podcast](https://mvp1.com.au/podcasts.html): Audio interviews and panels featuring tech founders and AI researchers.
+- [Business Model Workbook](https://mvp1.com.au/resources/business-model-workbook.html): Free downloadable workbook on business model strategy and enterprise valuation.
+- [Terms & Conditions](https://mvp1.com.au/terms-conditions.html): Legal frameworks, operational parameters, and contract terms.
+- [Privacy Policy](https://mvp1.com.au/privacy-policy.html): Compliance documentation outlining data governance, user privacy, and technical security protocols.
+
+### Key Contact & Meta Details
+- **Founder & CEO:** Jay Pandya
+- **Headquarters:** 241 Adelaide St, Brisbane City, QLD, Australia
+- **Phone:** +61 483 920 790
+- **Email:** info@mvp1.com.au
+- **Official Website:** https://mvp1.com.au/
