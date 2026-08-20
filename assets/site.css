@@ -434,6 +434,8 @@ section[data-screen-label="Home, capabilities"] .cards.c3 > .card:nth-child(3){f
 
 /* forms */
 .form{display:grid;gap:20px}
+.ghl-embed{width:100%}
+.ghl-embed iframe{width:100%;border:none;display:block}
 .field{display:grid;gap:8px}
 .field-label{font-family:var(--fh);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 .field input,.field select,.field textarea{background:transparent;border:0;border-bottom:1px solid var(--line-strong);color:#fff;font-family:var(--fb);font-size:17px;padding:12px 2px;min-height:48px;border-radius:0;
